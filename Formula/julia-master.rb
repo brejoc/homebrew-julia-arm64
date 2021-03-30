@@ -10,7 +10,7 @@ class JuliaMaster < Formula
 
   def install
     system "echo 'Building Julia from source. This will take a while!'"
-    system "make", "install"
+    system "make", "install", "PREFIX=#{prefix}"
   end
 
   test do
@@ -23,6 +23,6 @@ class JuliaMaster < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
-    system "false"
+    system "#{bin}/julia --version"
   end
 end
