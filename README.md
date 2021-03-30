@@ -1,6 +1,6 @@
 # Install Julia from Source with HomeBrew!
 
-Currently, the [Julia Programming Language](https://julialang.org) has supported pre-build installation packages for many [OS/Hardware combinations](https://julialang.org/downloads). While support for Arm-based Macs (Apple Silicon) is [underway](https://discourse.julialang.org/t/the-future-is-arms/41893), the only method for installing Julia on an M1 Mac is building from source. 
+Currently, the [Julia Programming Language](https://julialang.org) has pre-built installation packages for many [OS/Hardware combinations](https://julialang.org/downloads). While similar support for Arm-based Macs (Apple Silicon) is [underway](https://discourse.julialang.org/t/the-future-is-arms/41893), the only method for installing Julia on an M1 Mac __today__ is building from source. 
 
 You _could_ simply do a `git clone https://github.com/JuliaLang/julia`, and then `cd julia; make; sudo make install` to install Julia. If you prefer installing all your packages with [HomeBrew](https://docs.brew.sh), this repository is for you!
 
