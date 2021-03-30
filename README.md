@@ -11,5 +11,5 @@ Note that this installation method is simply a HomeBrew `Formula` that downloads
 1. Install [HomeBrew](https://docs.brew.sh) on MacOs (M1 Macs or Intel Macs)
 2. Fork this repository to your GitHub profile (I would never hack you, but you don't know that!)
 3. In your terminal, enter `brew tap <your_profile/julia-master>`. Note that `julia-master` doesn't contain the `homebrew-` part of the repo name. This is on purpose!
-4. In your terminal, enter `brew install --build-from-source --verbose julia-master` and watch your HomeBrew attempt to build Julia from source.
+4. In your terminal, enter `brew install --build-from-source --verbose julia-master` and watch HomeBrew attempt to build Julia from source.
 5. Profit?
