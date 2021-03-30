@@ -6,7 +6,8 @@ class JuliaMaster < Formula
   license "MIT"
 
   depends_on "make" => :build
-  conflicts_with cask: "julia", "julia-nightly"
+  conflicts_with cask: "julia"
+  conflicts_with cask: "julia-nightly"
 
   def install
     system "echo 'Building Julia from source. This will take a while!'"
