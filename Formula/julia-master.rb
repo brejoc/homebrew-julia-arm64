@@ -13,7 +13,7 @@ class JuliaMaster < Formula
   def install
     system "echo 'Building Julia from source. This will take a while!'"
     system "ENV[prefix]=#{prefix}"
-    system "make" "install"
+    system "make -j9", "install"
   end
 
   test do
