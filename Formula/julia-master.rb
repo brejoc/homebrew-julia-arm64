@@ -13,7 +13,7 @@ class JuliaMaster < Formula
   def install
     system "echo 'Building Julia from source. This will take a while!'"
     system "ENV[prefix]=#{prefix}"
-    system "make -j $(python -c 'import multiprocessing as mp; print(mp.cpu_count()+1)')", "install"
+    system "make", "-j $(python -c 'import multiprocessing as mp; print(mp.cpu_count()+1)')", "install"
   end
 
   test do
