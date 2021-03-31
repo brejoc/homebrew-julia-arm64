@@ -9,6 +9,7 @@ class JuliaMaster < Formula
   conflicts_with cask: "julia"
   conflicts_with cask: "julia-nightly"
 
+  # Using https://stackoverflow.com/a/31625863 to get core count!
   def install
     system "echo 'Building Julia from source. This will take a while!'"
     system "ENV[prefix]=#{prefix}"
