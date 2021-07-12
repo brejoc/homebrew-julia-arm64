@@ -1,8 +1,8 @@
-# Install Julia from Source with HomeBrew!
+# Install Julia 1.7 Beta 3 with HomeBrew!
 
 Currently, the [Julia Programming Language](https://julialang.org) has pre-built installation packages for many [OS/Hardware combinations](https://julialang.org/downloads). While similar support for Arm-based Macs (Apple Silicon) is [underway](https://discourse.julialang.org/t/the-future-is-arms/41893), the only method for installing Julia on an M1 Mac __today__ is building from source. 
 
-You _could_ simply do a `git clone https://github.com/JuliaLang/julia`, and then `cd julia; make; sudo make install` to install Julia. If you prefer installing all your packages with [HomeBrew](https://docs.brew.sh), this repository is for you!
+You _could_ simply do a `git clone https://github.com/JuliaLang/julia`, and then `cd julia; make; sudo make install` to install Julia. You could also download the correct binary from the [downloads page](https://julialang.org/downloads/) on Julia's official website. If you prefer installing all your packages with [HomeBrew](https://docs.brew.sh), this repository is for you!
 
 ## HomeBrew Instructions
 
@@ -10,6 +10,6 @@ Note that this installation method is simply a HomeBrew `Formula` that downloads
 
 1. Install [HomeBrew](https://docs.brew.sh) on MacOs (M1 Macs or Intel Macs)
 2. Fork this repository to your GitHub profile (I would never hack you, but you don't know that!)
-3. In your terminal, enter `brew tap <your_profile/julia-master>`. Note that `julia-master` doesn't contain the `homebrew-` part of the repo name. This is on purpose!
-4. In your terminal, enter `brew install --build-from-source --verbose julia-master` and watch HomeBrew attempt to build Julia from source.
+3. In your terminal, enter `brew tap <your_profile/julia-arm64>`. Note that `julia-arm64` doesn't contain the `homebrew-` part of the repo name. This is on purpose!
+4. In your terminal, enter `brew install --verbose julia-arm64` and watch HomeBrew install Julia.
 5. Profit?
