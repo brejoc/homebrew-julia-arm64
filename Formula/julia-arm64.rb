@@ -1,7 +1,7 @@
 class JuliaMaster < Formula
   desc "Julia Programming Language, installed from the master branch on GitHub"
   homepage "https://github.com/JuliaLang/julia"
-  url "https://julialang-s3.julialang.org/bin/mac/aarch64/1.7/julia-1.7.0-beta3-macaarch64.dmg"
+  url "https://github.com/JuliaLang/julia/releases/download/v1.7.1/julia-1.7.1-full.tar.gz"
   version "1.7"
   license "MIT"
 
